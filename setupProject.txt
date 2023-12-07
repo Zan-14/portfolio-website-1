@@ -1,0 +1,57 @@
+Setup this project step by step:
+
+1. Prepare all the assets first (photos, icons, decorations, etc)
+    Note: Better already has the web design or references
+2. Group the assets based on the web section (home, about, contacts, etc)
+3. Run : npx create-next-app@latest .
+    Note:
+        Would you like to use TypeScript? ... No
+        Would you like to use ESLint? ... No
+        Would you like to use Tailwind CSS? ... Yes
+        Would you like to use `src/` directory? » No
+        Would you like to use App Router? (recommended) ... Yes
+        Would you like to customize the default import alias (@/*)? ... No
+
+3.5. Change master branch to main: 
+        git branch -m master main
+
+4. Run : npx shadcn-ui@latest init
+    Note (options): 
+        TypeScript? = No
+        Style? = Default
+        base color? = Slate
+        global css file? = app/globals.css
+        CSS variables? = Yes
+        tailwind config? = tailwind.config.js
+        components? = @/components
+        utils? = @/lib/utils
+        React Server Components? = Yes
+        components.json? = Yes
+
+5. Run : npm i framer-motion lucide-react next-themes react-countup react-icons swiper
+5.5. Run : npm i @radix-ui/react-icons
+
+// Adding Shadcn ui components
+6. Run : npx shadcn-ui@latest add badge
+         npx shadcn-ui@latest add button
+         npx shadcn-ui@latest add card
+         npx shadcn-ui@latest add form
+         npx shadcn-ui@latest add input
+         npx shadcn-ui@latest add label
+         npx shadcn-ui@latest add sheet
+         npx shadcn-ui@latest add tabs
+         npx shadcn-ui@latest add textarea
+
+7. Change layout.js and page.js to jsx format (inside app folder)
+8. Run : npm run dev
+9. Continue the tutorial (11.00)
+10. Create each component like header, footer, etc first
+
+
+
+
+Website to check:
+- Portfolio web full tutorial (this project reference) = https://www.youtube.com/watch?v=Rew98iFupBM&list=PLLcFl6va6PSJ1TAHUisPySLjX9WPcGUKH&index=4&t=125s
+- Shadcn-ui = https://ui.shadcn.com/
+- Radix-ui icons = https://www.radix-ui.com/icons
+- Next-js url = http://localhost:3000
