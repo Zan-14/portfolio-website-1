@@ -8,12 +8,8 @@ import Badge from "./Badge";
 import SocialMedia from "./SocialMedia";
 
 // icons
-import {
-  RiBriefcase4Fill,
-  RiTeamFill,
-  RiTodoFill,
-  RiArrowDownSLine,
-} from "react-icons/ri";
+import { RiTodoFill, RiArrowDownSLine } from "react-icons/ri";
+import { PiCertificateFill } from "react-icons/pi";
 
 const Hero = () => {
   return (
@@ -50,6 +46,20 @@ const Hero = () => {
           </div>
           {/* image */}
           <div className="hidden xl:flex relative">
+            {/* badge 1 finished projects*/}
+            <Badge
+              containerStyles="absolute top-[24%] -left-[5rem]"
+              icon={<RiTodoFill />}
+              endCountNum={3}
+              badgeText="Finished Projects"
+            />
+            {/* badge 2 certificates */}
+            <Badge
+              containerStyles="absolute top-[70%] -right-8"
+              icon={<PiCertificateFill />}
+              endCountNum={1}
+              badgeText="Certificates"
+            />
             <div className="bg-hero_shape2_brown dark:bg-hero_shape4_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg
               containerStyle="w-[510px] h-[462px] relative"
