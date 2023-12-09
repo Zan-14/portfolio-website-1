@@ -108,6 +108,7 @@ const skillData = [
       },
       {
         imgPath: "/about/notion.svg",
+        imgPathDark: "/about/notion-white.svg",
       },
     ],
   },
@@ -274,7 +275,56 @@ const AboutMe = () => {
                   </div>
                 </TabsContent>
                 {/* skills */}
-                <TabsContent value="skills">Skills info</TabsContent>
+                <TabsContent value="skills">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-8">What I'm Good At</h3>
+                    <div className="mb-16">
+                      <h4 className="text-xl font-semibold mb-2">Skills</h4>
+                      <div className="border-b-2 border-border dark:border-b-muted-foreground/70 mb-4"></div>
+                      {/* list skills */}
+                      <div>
+                        {getData(skillData, "skills").data.map(
+                          (item, index) => {
+                            const { skillName, technologies } = item;
+                            return (
+                              <div
+                                className="text-center xl:text-left mx-auto xl:mx-0 mb-4"
+                                key={index}
+                              >
+                                <div className="font-medium">{skillName}</div>
+                                <div className="xl:ml-4">{technologies}</div>
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                    {/* tools icon */}
+                    <div>
+                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
+                        Tools
+                      </h4>
+                      <div className="border-b-2 border-border dark:border-b-muted-foreground/70 mb-4"></div>
+                      {/* list icons */}
+                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                        {getData(skillData, "tools").data.map((item, index) => {
+                          const { imgPath, imgPathDark } = item;
+                          return (
+                            <div key={index}>
+                              <Image
+                                src={imgPath}
+                                width={48}
+                                height={48}
+                                alt="tools"
+                                priority
+                              />
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </TabsContent>
               </div>
             </Tabs>
           </div>
