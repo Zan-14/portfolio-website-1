@@ -9,6 +9,7 @@
       --foreground: 240 19% 16%;
       --card: 0 0% 100%;
       --card-foreground: 240 19% 16%;
+      --card-header: 238 21% 25%;
       --popover: 0 0% 100%;
       --popover-foreground: 240 19% 16%;
       --primary: 0 85% 71%;
@@ -88,4 +89,11 @@
 
 .badge {
   @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
+}
+
+/* swiper bullets styles */
+.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @apply bg-primary;
 }
