@@ -50,7 +50,7 @@ const Hero = () => {
             <Badge
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiTodoFill />}
-              endCountNum={3}
+              endCountNum={1}
               badgeText="Finished Projects"
             />
             {/* badge 2 certificates */}
