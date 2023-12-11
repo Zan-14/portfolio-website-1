@@ -168,7 +168,7 @@ const AboutMe = () => {
                       engineering knowledge.
                     </p>
                     {/* icons */}
-                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                    <div className="grid xl:grid-cols-2 gap-4 xl:gap-x-14 mb-12">
                       {infoData.map((item, index) => {
                         return (
                           <div

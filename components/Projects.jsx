@@ -13,7 +13,7 @@ import { Pagination } from "swiper/modules";
 import ProjectCard from "./ProjectCard";
 
 // project data
-const projectData = [
+export const projectData = [
   {
     image: "/myProjects/project-1.png",
     category: "next js",
@@ -73,7 +73,7 @@ const projectData = [
 const Projects = () => {
   return (
     <section className="relative mb-12 xl:mb-48">
-      <div className="container mx-auto">
+      <div className="container mx-auto xl:flex xl:justify-between">
         {/* text */}
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[540px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4">Latest Projects</h2>
@@ -85,7 +85,7 @@ const Projects = () => {
           </Link>
         </div>
         {/* slider */}
-        <div className="xl:max-w-[850px] xl:absolute right-0 top-0">
+        <div className="xl:max-w-[850px]">
           <Swiper
             className="h-[540px]"
             slidesPerView={1}
