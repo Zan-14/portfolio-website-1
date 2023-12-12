@@ -11,7 +11,7 @@ const Contactpage = () => {
     <section>
       <div className="container mx-auto">
         {/* text & photo */}
-        <div className="grid md:grid-cols-2 pt-12 xl:h-[480px] mb-6 xl:mb-24">
+        <div className="grid md:grid-cols-2 pt-12 xl:h-[480px] mb-6 md:mb-16 xl:mb-24">
           {/* text */}
           <div className="flex flex-col justify-center">
             <div className="flex items-center gap-x-4 text-primary text-lg mb-4">
@@ -38,7 +38,7 @@ const Contactpage = () => {
         {/* info text & form */}
         <div className="grid md:grid-cols-2 mb-24 xl:mb-32">
           {/* info text */}
-          <div className="flex flex-col gap-y-4 xl:gap-y-10 text-base xl:text-lg mb-8 lg:mb-0">
+          <div className="flex flex-col gap-y-4 xl:gap-y-10 text-base xl:text-lg mb-16 lg:mb-0">
             {/* discord */}
             <div className="flex items-center gap-x-4 lg:gap-x-8">
               <RiDiscordFill size={18} className="text-primary" />
