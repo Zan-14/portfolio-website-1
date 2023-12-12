@@ -25,7 +25,7 @@ const Hero = () => {
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               Currently creating some projects with JavaScript. Graduated from
               HariSenin.com bootcamp for Full Stack Web Developer. My goal is to
-              become a professional full-stack web developer
+              become a professional full-stack web developer.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
