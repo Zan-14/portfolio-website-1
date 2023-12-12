@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
-import { Download, Send } from "lucide-react";
 
 // components
+import { Button } from "./ui/button";
 import DevImg from "./DevImg";
 import Badge from "./Badge";
 import SocialMedia from "./SocialMedia";
 
 // icons
+import { Download, Send } from "lucide-react";
 import { RiTodoFill, RiArrowDownSLine } from "react-icons/ri";
 import { PiCertificateFill } from "react-icons/pi";
 
@@ -34,9 +34,12 @@ const Hero = () => {
                   Contact me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
-                Download CV <Download size={18} />
-              </Button>
+              {/* create a direct download link, visit: https://www.howtogeek.com/747810/how-to-make-a-direct-download-link-for-google-drive-files/#:~:text=On%20the%20site%2C%20find%20the,that%20tries%20to%20use%20it. */}
+              <Link href="https://drive.google.com/uc?export=download&id=1BCsu9fPpfmJ8bkNJTvCS4beLrmi1VSAc">
+                <Button variant="secondary" className="gap-x-2">
+                  Download CV <Download size={18} />
+                </Button>
+              </Link>
             </div>
             {/* social media */}
             <SocialMedia

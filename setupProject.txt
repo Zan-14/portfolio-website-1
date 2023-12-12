@@ -46,6 +46,8 @@ Setup this project step by step:
 8. Run : npm run dev
 9. Continue the tutorial (11.00)
 10. Create each component like header, footer, etc first
+11. Run : npm install @emailjs/browser --save
+        This is for sending Email directly from the contact page
 
 
 
@@ -55,3 +57,4 @@ Website to check:
 - Shadcn-ui = https://ui.shadcn.com/
 - Radix-ui icons = https://www.radix-ui.com/icons
 - Next-js url = http://localhost:3000
+- Emailjs =  http://emailjs.com 
